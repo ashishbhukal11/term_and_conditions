@@ -1,41 +1,491 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        }
-        .welcome-card {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #666;
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms &amp; Conditions — Breezi</title>
+  <meta name="description" content="Terms and Conditions for Breezi. Rules and guidelines for using the Breezi fitness and calorie tracking app.">
+  <style>
+    :root {
+      --text: #1a1a2e;
+      --text-muted: #4a4a6a;
+      --accent: #4361ee;
+      --accent-soft: #4361ee18;
+      --bg: #f5f5f9;
+      --card: #ffffff;
+      --border: #e8e8f0;
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--font);
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+    header {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--accent);
+    }
+    header h1 {
+      margin: 0 0 0.35rem;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    main section {
+      margin-bottom: 2.25rem;
+    }
+    main section:last-of-type {
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 1.5rem 0 0.75rem;
+      color: var(--text);
+      line-height: 1.35;
+    }
+    main section:first-child h2 { margin-top: 0; }
+    h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1.25rem 0 0.5rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+    p {
+      margin: 0 0 1rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    p:last-child { margin-bottom: 0; }
+    ul, ol {
+      margin: 0 0 1rem;
+      padding-left: 1.5rem;
+      list-style-position: outside;
+    }
+    ul { list-style-type: disc; }
+    ol { list-style-type: lower-alpha; }
+    ul:last-child, ol:last-child { margin-bottom: 0; }
+    li {
+      margin-bottom: 0.4rem;
+      padding-left: 0.25rem;
+    }
+    li:last-child { margin-bottom: 0; }
+    .contact-list {
+      list-style: none;
+      padding-left: 0;
+    }
+    .contact-list li {
+      margin-bottom: 0.5rem;
+      padding-left: 0;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+    .contact-list a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+    strong { font-weight: 600; }
+    .important {
+      background: var(--accent-soft);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      border-radius: 6px;
+      margin: 1rem 0;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #e8e8f0;
+        --text-muted: #a0a0b8;
+        --bg: #12121a;
+        --card: #1a1a2e;
+        --border: #2a2a3e;
+        --accent-soft: #6b8cff22;
+      }
+      a, .contact-list a { color: #6b8cff; }
+    }
+  </style>
 </head>
 <body>
-    <div class="welcome-card">
-        <h1>👋 Welcome!</h1>
-        <p>Hello and welcome to this simple HTML page.</p>
-        <p>Have a great day! ✨</p>
-    </div>
+  <div class="container">
+    <header>
+      <h1>Terms &amp; Conditions</h1>
+      <p class="meta">Breezi · Last updated: March 18, 2026</p>
+    </header>
+
+    <main>
+      <!-- 1. Introduction & Acceptance -->
+      <section>
+        <p>Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the Breezi application ("the App", "Service") operated by the developer or legal entity listed on the Apple App Store and Google Play Store listings for Breezi ("the Company", "we", "us", or "our").</p>
+        <p>By downloading, installing, accessing, or using Breezi, you ("You", "the User") acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions and our <a href="index.html">Privacy Policy</a>. If you do not agree to these Terms, you must not use the App.</p>
+        <p>These Terms constitute a legally binding agreement between you and the Company. Your continued use of the App following the posting of any changes to these Terms constitutes acceptance of those changes.</p>
+      </section>
+
+      <!-- 2. Eligibility -->
+      <section>
+        <h2>1. Eligibility</h2>
+        <p>You must be at least 13 years of age to use the App. If you are under 18 years of age (or the age of majority in your jurisdiction), you must have the consent of a parent or legal guardian to use the App and agree to these Terms. By using the App, you represent and warrant that you meet these eligibility requirements.</p>
+        <p>The App is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13. If we learn that a child under 13 has created an account, we will take steps to delete the account and associated data.</p>
+      </section>
+
+      <!-- 3. Description of Service -->
+      <section>
+        <h2>2. Description of Service</h2>
+        <p>Breezi is a fitness and calorie tracking application that provides the following features:</p>
+        <ul>
+          <li>Workout tracking and exercise logging</li>
+          <li>Calorie and macronutrient tracking (calories in vs. calories out)</li>
+          <li>AI-powered food recognition and calorie estimation (via text, photo, and voice input)</li>
+          <li>AI-generated recipe suggestions</li>
+          <li>Barcode scanning for food product nutritional information</li>
+          <li>Integration with Apple HealthKit and Google Health Connect for health and activity data</li>
+          <li>Social features including friend connections, calorie sharing, and exercise leaderboards</li>
+          <li>Personalized fitness goal recommendations generated during onboarding</li>
+          <li>Water intake tracking</li>
+          <li>Progress graphs and analytics</li>
+        </ul>
+        <p>We reserve the right to modify, suspend, or discontinue any part of the Service at any time, with or without notice, and without liability to you.</p>
+      </section>
+
+      <!-- 4. NOT MEDICAL ADVICE -->
+      <section>
+        <h2>3. Not Medical or Professional Advice</h2>
+        <div class="important">
+          <p><strong>Breezi is not a medical device and does not provide medical advice.</strong> The App is designed for general fitness and wellness informational purposes only. All information provided by the App — including but not limited to calorie estimates, macronutrient calculations, fitness goal recommendations, AI-generated nutritional analysis, recipe suggestions, and health data displays — is intended solely for general informational and educational reference and should not be relied upon as a substitute for professional medical advice, diagnosis, or treatment.</p>
+        </div>
+        <p>You expressly acknowledge and agree that:</p>
+        <ul>
+          <li>The App does <strong>not</strong> provide medical advice, diagnosis, or treatment of any kind.</li>
+          <li>All calorie counts, macronutrient values, nutritional information, and fitness recommendations provided by the App (whether generated by AI, sourced from third-party databases, or calculated by algorithms) are <strong>estimates and approximations only</strong>. They may be inaccurate, incomplete, or unsuitable for your individual circumstances.</li>
+          <li>AI-powered food analysis (including image-based and text-based calorie estimation) uses artificial intelligence that may produce errors, misidentify food items, or provide incorrect nutritional values. You should <strong>not</strong> rely solely on AI-generated data for dietary decisions.</li>
+          <li>Health data displayed from Apple HealthKit or Google Health Connect is sourced from your device and third-party hardware. We do not verify the accuracy of this data.</li>
+          <li>Personalized goal recommendations generated during onboarding are based on general fitness formulas and AI analysis. They are <strong>not</strong> tailored medical or dietary prescriptions.</li>
+          <li>You should always consult with a qualified healthcare provider, physician, registered dietitian, or other qualified professional before starting any diet, exercise program, or fitness regimen, or before making any decisions based on information provided by the App.</li>
+          <li>If you have any medical condition, eating disorder, food allergy, or other health concern, you must seek guidance from a licensed healthcare professional and not rely on information from the App.</li>
+          <li>You are solely responsible for any decisions you make based on information provided by the App, and you assume all risk associated with the use of any such information.</li>
+        </ul>
+      </section>
+
+      <!-- 5. Assumption of Risk -->
+      <section>
+        <h2>4. Assumption of Risk</h2>
+        <p>You acknowledge and agree that the use of the App, including any fitness, dietary, or wellness activities you undertake based on information provided by or through the App, is entirely at your own risk.</p>
+        <p>Without limiting the foregoing, you expressly assume all risk of:</p>
+        <ul>
+          <li>Physical injury, illness, or death resulting from exercise, dietary changes, or any other activity undertaken in connection with your use of the App</li>
+          <li>Adverse health outcomes resulting from following or relying upon calorie estimates, macronutrient data, AI-generated nutritional information, recipe suggestions, fitness goal recommendations, or any other information provided by the App</li>
+          <li>Inaccurate, incomplete, or erroneous data provided by the App, its AI features, third-party databases, or health platform integrations (HealthKit, Health Connect)</li>
+          <li>Failure to achieve desired fitness, weight loss, weight gain, or other health and wellness goals</li>
+          <li>Any consequences arising from your interaction with other users through the App's social and leaderboard features</li>
+        </ul>
+        <p>The Company is not responsible for any harm, injury, loss, or damage of any kind arising from your use of the App or your reliance on any information provided by the App.</p>
+      </section>
+
+      <!-- 6. Account Registration -->
+      <section>
+        <h2>5. Account Registration and Security</h2>
+        <p>To use certain features of the App, you must create an account. You may register using your email address and password, Apple Sign-In (on iOS), or Google Sign-In (on Android).</p>
+        <p>You agree to:</p>
+        <ul>
+          <li>Provide accurate, current, and complete information during registration</li>
+          <li>Maintain and promptly update your account information to keep it accurate and current</li>
+          <li>Maintain the security and confidentiality of your login credentials</li>
+          <li>Accept responsibility for all activities that occur under your account</li>
+          <li>Notify us immediately at <a href="mailto:skeletonxtrme@gmail.com">skeletonxtrme@gmail.com</a> if you suspect any unauthorized use of your account</li>
+        </ul>
+        <p>We reserve the right to suspend or terminate your account at our sole discretion if we believe you have violated these Terms, engaged in fraudulent activity, or for any other reason we deem necessary to protect the Service or other users.</p>
+      </section>
+
+      <!-- 7. Subscriptions and Payments -->
+      <section>
+        <h2>6. Subscriptions and Payments</h2>
+        <p>Breezi offers subscription-based access to premium features. Subscriptions are billed through the Apple App Store (on iOS) or Google Play Store (on Android).</p>
+        <h3>Billing and Renewal</h3>
+        <ul>
+          <li>Subscription fees are charged to your Apple ID or Google account at confirmation of purchase.</li>
+          <li>Subscriptions automatically renew at the end of each billing period unless you cancel at least 24 hours before the end of the current period.</li>
+          <li>Your account will be charged for renewal within 24 hours prior to the end of the current billing period at the then-current subscription rate.</li>
+        </ul>
+        <h3>Cancellation and Refunds</h3>
+        <ul>
+          <li>You may cancel your subscription at any time through your device's subscription settings (Apple App Store or Google Play Store). Cancellation takes effect at the end of the current billing period.</li>
+          <li>We do not process payments directly. All billing, refunds, and payment disputes are handled by Apple or Google, as applicable, in accordance with their respective terms and refund policies.</li>
+          <li>No refunds will be issued for partial subscription periods.</li>
+        </ul>
+        <h3>Free Trials</h3>
+        <p>If we offer a free trial, you will not be charged during the trial period. At the end of the trial, your subscription will automatically convert to a paid subscription unless you cancel before the trial expires. Any unused portion of a free trial will be forfeited when you purchase a subscription.</p>
+        <h3>Price Changes</h3>
+        <p>We reserve the right to change subscription prices. Price changes will take effect at the start of the next billing period following notice of the change. Your continued use of the App after a price change constitutes your agreement to pay the modified amount.</p>
+      </section>
+
+      <!-- 8. Acceptable Use -->
+      <section>
+        <h2>7. Acceptable Use</h2>
+        <p>You agree to use the App only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+        <ul>
+          <li>Use the App in any way that violates any applicable federal, provincial, state, local, or international law or regulation</li>
+          <li>Use the App for any purpose that is fraudulent, misleading, or deceptive</li>
+          <li>Impersonate or attempt to impersonate another person, user, or entity</li>
+          <li>Create multiple accounts for abusive or fraudulent purposes</li>
+          <li>Interfere with, disrupt, or attempt to gain unauthorized access to the App, its servers, or any connected networks</li>
+          <li>Attempt to reverse-engineer, decompile, disassemble, or otherwise derive the source code of the App</li>
+          <li>Use any automated means (bots, scrapers, etc.) to access or collect data from the App</li>
+          <li>Transmit any viruses, malware, or other harmful code</li>
+          <li>Harass, bully, threaten, or intimidate other users</li>
+          <li>Upload, post, or share any content that is illegal, obscene, defamatory, threatening, infringing, or otherwise objectionable</li>
+          <li>Manipulate leaderboard data, submit fraudulent proof videos, or engage in any form of cheating</li>
+          <li>Abuse the AI features by submitting inappropriate, harmful, or abusive content</li>
+          <li>Circumvent, disable, or otherwise interfere with any security features of the App</li>
+        </ul>
+        <p>We reserve the right to investigate and take appropriate action against anyone who, in our sole discretion, violates this section, including removing content, suspending or terminating accounts, and reporting to law enforcement authorities.</p>
+      </section>
+
+      <!-- 9. User-Generated Content -->
+      <section>
+        <h2>8. User-Generated Content</h2>
+        <p>The App allows you to create, upload, post, and share content, including but not limited to leaderboard proof videos, comments, reactions, and profile information ("User Content").</p>
+        <h3>Your Responsibility</h3>
+        <p>You are solely responsible for all User Content that you submit, post, or display through the App. You represent and warrant that:</p>
+        <ul>
+          <li>You own or have the necessary rights and permissions to use and authorize the use of all User Content you submit</li>
+          <li>Your User Content does not violate the rights of any third party, including copyright, trademark, privacy, or other intellectual property or personal rights</li>
+          <li>Your User Content does not contain any material that is illegal, obscene, defamatory, threatening, or otherwise objectionable</li>
+        </ul>
+        <h3>License to User Content</h3>
+        <p>By submitting User Content to the App, you grant us a non-exclusive, worldwide, royalty-free, transferable, sublicensable license to use, reproduce, modify, display, and distribute your User Content in connection with operating and providing the Service. This license ends when you delete your User Content or your account, except where your content has been shared with other users and they have not deleted it, or where we are required to retain it for legal purposes.</p>
+        <h3>Content Moderation</h3>
+        <p>We reserve the right, but are not obligated, to monitor, review, and remove any User Content at our sole discretion, for any reason or no reason, including content that we determine violates these Terms or may be harmful, offensive, or otherwise objectionable. We do not endorse any User Content or any opinion, recommendation, or advice expressed therein.</p>
+      </section>
+
+      <!-- 10. Intellectual Property -->
+      <section>
+        <h2>9. Intellectual Property</h2>
+        <p>The App and its entire contents, features, and functionality — including but not limited to all software, code, design, text, graphics, logos, icons, images, audio, and the selection and arrangement thereof — are owned by the Company or its licensors and are protected by copyright, trademark, and other intellectual property laws.</p>
+        <p>These Terms do not grant you any right, title, or interest in or to the App or any content therein, except for the limited right to use the App in accordance with these Terms.</p>
+        <p>You may not reproduce, distribute, modify, create derivative works of, publicly display, publicly perform, republish, download, store, or transmit any of the material on the App, except as incidental to normal use of the App.</p>
+      </section>
+
+      <!-- 11. Third-Party Services -->
+      <section>
+        <h2>10. Third-Party Services</h2>
+        <p>The App integrates with and relies upon third-party services to provide its functionality, including but not limited to:</p>
+        <ul>
+          <li><strong>Firebase (Google):</strong> Authentication, database, storage, and cloud functions</li>
+          <li><strong>OpenAI:</strong> AI-powered food analysis, recipe generation, and personalized recommendations</li>
+          <li><strong>RevenueCat:</strong> Subscription management</li>
+          <li><strong>Open Food Facts:</strong> Food product database for barcode scanning</li>
+          <li><strong>Apple HealthKit / Google Health Connect:</strong> Health and fitness data integration</li>
+          <li><strong>Apple App Store / Google Play Store:</strong> App distribution and payment processing</li>
+        </ul>
+        <p>Your use of these third-party services is subject to their respective terms of service and privacy policies. We are not responsible for the practices, content, or availability of any third-party services. Any issues related to third-party services (including billing disputes with Apple or Google) should be directed to the respective third-party provider.</p>
+        <p>We do not guarantee the availability, accuracy, or reliability of any third-party service. If a third-party service becomes unavailable or changes its terms, certain features of the App may become limited or unavailable, and we shall not be liable for any such limitation.</p>
+      </section>
+
+      <!-- 12. Health Data & HealthKit -->
+      <section>
+        <h2>11. Health and Fitness Data</h2>
+        <p>If you choose to connect the App to Apple HealthKit or Google Health Connect, you grant us permission to read health and fitness data as described in our <a href="index.html">Privacy Policy</a>. You may revoke this access at any time through your device settings.</p>
+        <p>You acknowledge that:</p>
+        <ul>
+          <li>Health and fitness data displayed in the App originates from your device and/or third-party wearable devices. We do not independently verify the accuracy of this data.</li>
+          <li>The App's interpretation, display, and use of health data is for informational purposes only and does not constitute medical advice.</li>
+          <li>You should not make medical or health decisions based solely on data displayed in the App.</li>
+        </ul>
+      </section>
+
+      <!-- 13. AI Disclaimer -->
+      <section>
+        <h2>12. AI-Generated Content Disclaimer</h2>
+        <p>Breezi uses artificial intelligence (AI) technology provided by third-party services to generate food analysis, calorie estimates, nutritional information, recipe suggestions, and personalized fitness recommendations.</p>
+        <div class="important">
+          <p><strong>AI-generated content is provided on an "as is" basis and may contain errors, inaccuracies, or omissions.</strong> AI technology is inherently imperfect, and results may vary significantly based on input quality, image clarity, food description accuracy, and other factors beyond our control.</p>
+        </div>
+        <p>You expressly acknowledge and agree that:</p>
+        <ul>
+          <li>AI-generated calorie counts, macronutrient values, and nutritional information are <strong>approximations only</strong> and should not be treated as exact or scientifically precise measurements</li>
+          <li>AI may misidentify foods, portions, ingredients, or serving sizes, leading to incorrect nutritional estimates</li>
+          <li>AI-generated recipes may not account for food allergies, intolerances, medical conditions, or dietary restrictions specific to you</li>
+          <li>AI-generated fitness goals and calorie targets are based on general formulas and should be validated by a qualified professional</li>
+          <li>You are solely responsible for verifying any AI-generated information before acting upon it</li>
+          <li>We make no warranty or guarantee regarding the accuracy, completeness, or suitability of any AI-generated content</li>
+          <li>The Company shall not be liable for any harm, injury, adverse health outcome, or loss arising from your reliance on AI-generated content</li>
+        </ul>
+      </section>
+
+      <!-- 14. Disclaimer of Warranties -->
+      <section>
+        <h2>13. Disclaimer of Warranties</h2>
+        <div class="important">
+          <p><strong>THE APP AND ALL CONTENT, FEATURES, AND SERVICES PROVIDED THROUGH THE APP ARE PROVIDED ON AN "AS IS" AND "AS AVAILABLE" BASIS, WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED.</strong></p>
+        </div>
+        <p>To the fullest extent permitted by applicable law, the Company expressly disclaims all warranties, whether express, implied, statutory, or otherwise, including but not limited to:</p>
+        <ul>
+          <li>Implied warranties of merchantability, fitness for a particular purpose, and non-infringement</li>
+          <li>Any warranty that the App will be uninterrupted, timely, secure, or error-free</li>
+          <li>Any warranty regarding the accuracy, reliability, completeness, or currentness of any information, content, or data provided through the App, including but not limited to calorie counts, nutritional data, fitness recommendations, AI-generated content, health data, and barcode scan results</li>
+          <li>Any warranty that the App will meet your requirements or expectations</li>
+          <li>Any warranty that defects in the App will be corrected</li>
+          <li>Any warranty regarding the results that may be obtained from use of the App</li>
+        </ul>
+        <p>You acknowledge that the Company does not warrant or guarantee that any particular health, fitness, weight loss, weight gain, or wellness outcome will be achieved through use of the App. Individual results vary and depend on numerous factors outside of our control, including but not limited to your individual metabolism, genetics, consistency, medical conditions, and adherence to professional advice.</p>
+        <p>No advice or information, whether oral or written, obtained by you from the Company or through the App shall create any warranty not expressly stated in these Terms.</p>
+      </section>
+
+      <!-- 15. Limitation of Liability -->
+      <section>
+        <h2>14. Limitation of Liability</h2>
+        <div class="important">
+          <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE COMPANY, ITS DIRECTORS, EMPLOYEES, PARTNERS, AGENTS, SUPPLIERS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO DAMAGES FOR LOSS OF PROFITS, GOODWILL, USE, DATA, OR OTHER INTANGIBLE LOSSES, ARISING OUT OF OR IN CONNECTION WITH YOUR USE OF OR INABILITY TO USE THE APP.</strong></p>
+        </div>
+        <p>Without limiting the foregoing, the Company shall not be liable for any damages, injury, or losses arising from:</p>
+        <ul>
+          <li>Inaccurate calorie counts, nutritional data, or AI-generated information provided by the App</li>
+          <li>Your reliance on any information, content, or data provided by or through the App</li>
+          <li>Failure to achieve desired fitness, health, weight, or wellness goals</li>
+          <li>Physical injury, illness, or adverse health effects resulting from exercise, dietary changes, or other activities undertaken in connection with the App</li>
+          <li>Any unauthorized access to or alteration of your data or transmissions</li>
+          <li>Any interruption, suspension, or discontinuation of the App or any part thereof</li>
+          <li>Errors, omissions, or inaccuracies in data sourced from third-party services (including HealthKit, Health Connect, Open Food Facts, and OpenAI)</li>
+          <li>Actions or content of other users, including User Content posted on leaderboards or through social features</li>
+          <li>Any matter relating to the App beyond our reasonable control</li>
+        </ul>
+        <p>To the maximum extent permitted by applicable law, the Company's total aggregate liability to you for all claims arising out of or relating to these Terms or your use of the App shall not exceed the amount you have paid to the Company (through subscription fees) in the twelve (12) months immediately preceding the event giving rise to the claim, or fifty Canadian dollars (CAD $50.00), whichever is greater.</p>
+        <p>Some jurisdictions do not allow the exclusion or limitation of certain warranties or liability. In such jurisdictions, the Company's liability shall be limited to the greatest extent permitted by law.</p>
+      </section>
+
+      <!-- 16. Indemnification -->
+      <section>
+        <h2>15. Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold harmless the Company, its directors, officers, employees, agents, and affiliates from and against any and all claims, damages, obligations, losses, liabilities, costs, or expenses (including reasonable attorneys' fees) arising from:</p>
+        <ul>
+          <li>Your use of the App or any activity carried out under your account</li>
+          <li>Your violation of these Terms</li>
+          <li>Your violation of any rights of a third party, including intellectual property, privacy, or other rights</li>
+          <li>Any User Content you submit, post, or share through the App</li>
+          <li>Any claim that your use of the App caused damage to a third party</li>
+          <li>Your negligent or wrongful conduct</li>
+        </ul>
+        <p>This indemnification obligation shall survive the termination of these Terms and your use of the App.</p>
+      </section>
+
+      <!-- 17. Termination -->
+      <section>
+        <h2>16. Termination</h2>
+        <p>We may terminate or suspend your account and access to the App immediately, without prior notice or liability, at our sole discretion, for any reason, including but not limited to a breach of these Terms.</p>
+        <p>You may terminate your account at any time by deleting your account through the App (Account &gt; Delete Account) or by contacting us at <a href="mailto:skeletonxtrme@gmail.com">skeletonxtrme@gmail.com</a>.</p>
+        <p>Upon termination:</p>
+        <ul>
+          <li>Your right to use the App will immediately cease</li>
+          <li>We may delete your account data in accordance with our <a href="index.html">Privacy Policy</a></li>
+          <li>Any active subscription must be cancelled separately through the Apple App Store or Google Play Store to avoid continued billing</li>
+          <li>All provisions of these Terms which by their nature should survive termination shall survive, including but not limited to disclaimers of warranties, limitation of liability, indemnification, and governing law</li>
+        </ul>
+      </section>
+
+      <!-- 18. Governing Law -->
+      <section>
+        <h2>17. Governing Law and Jurisdiction</h2>
+        <p>These Terms shall be governed by and construed in accordance with the laws of the Province of Ontario and the federal laws of Canada applicable therein, without regard to conflict of law principles.</p>
+        <p>Any legal action or proceeding arising out of or relating to these Terms or your use of the App shall be brought exclusively in the courts of competent jurisdiction in Ontario, Canada, and you consent to the personal jurisdiction of such courts.</p>
+      </section>
+
+      <!-- 19. Dispute Resolution -->
+      <section>
+        <h2>18. Dispute Resolution</h2>
+        <p>Before initiating any legal proceeding, you agree to first contact us at <a href="mailto:skeletonxtrme@gmail.com">skeletonxtrme@gmail.com</a> and attempt to resolve the dispute informally for at least thirty (30) days. If the dispute cannot be resolved informally, either party may pursue formal legal proceedings as set forth in the "Governing Law and Jurisdiction" section above.</p>
+        <p>You agree that any dispute resolution proceedings will be conducted on an individual basis and not as a class action, consolidated action, or representative action. You waive any right to participate in a class action lawsuit or class-wide arbitration against the Company.</p>
+      </section>
+
+      <!-- 20. Apple-Specific Terms -->
+      <section>
+        <h2>19. Apple App Store Additional Terms</h2>
+        <p>If you downloaded the App from the Apple App Store, the following additional terms apply:</p>
+        <ul>
+          <li>These Terms are between you and the Company only, and not with Apple Inc. ("Apple"). Apple is not responsible for the App or its content.</li>
+          <li>The license granted to you for the App is limited to a non-transferable license to use the App on any Apple-branded device that you own or control, as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions.</li>
+          <li>Apple has no obligation to provide any maintenance or support services for the App.</li>
+          <li>Apple is not responsible for addressing any claims by you or a third party relating to the App, including but not limited to product liability claims, any claim that the App fails to conform to applicable legal or regulatory requirements, and claims arising under consumer protection or similar legislation.</li>
+          <li>In the event of any third-party claim that the App infringes a third party's intellectual property rights, the Company, not Apple, will be solely responsible for the investigation, defense, settlement, and discharge of any such claim.</li>
+          <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and, upon your acceptance, Apple will have the right to enforce these Terms against you as a third-party beneficiary.</li>
+          <li>You represent and warrant that you are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country, and that you are not listed on any U.S. Government list of prohibited or restricted parties.</li>
+        </ul>
+      </section>
+
+      <!-- 21. Google Play Additional Terms -->
+      <section>
+        <h2>20. Google Play Store Additional Terms</h2>
+        <p>If you downloaded the App from the Google Play Store, the following additional terms apply:</p>
+        <ul>
+          <li>These Terms are between you and the Company only, and not with Google LLC ("Google"). Google is not responsible for the App or its content.</li>
+          <li>Your use of the App must comply with Google Play's Terms of Service.</li>
+          <li>Google is not responsible for addressing any claims by you or a third party relating to the App.</li>
+        </ul>
+      </section>
+
+      <!-- 22. Modifications to Terms -->
+      <section>
+        <h2>21. Changes to These Terms</h2>
+        <p>We reserve the right to modify or replace these Terms at any time at our sole discretion. We will notify you of material changes by posting the updated Terms on this page and updating the "Last updated" date.</p>
+        <p>For significant changes, we will provide notice through a prominent notice within the App. Your continued use of the App after any changes to these Terms constitutes your acceptance of the revised Terms.</p>
+        <p>If you do not agree with the revised Terms, you must stop using the App and may delete your account.</p>
+      </section>
+
+      <!-- 23. Severability -->
+      <section>
+        <h2>22. Severability</h2>
+        <p>If any provision of these Terms is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, the invalidity of that provision shall not affect the validity of the remaining provisions, which shall continue in full force and effect. The invalid provision shall be modified to the minimum extent necessary to make it valid and enforceable while preserving its original intent.</p>
+      </section>
+
+      <!-- 24. Waiver -->
+      <section>
+        <h2>23. Waiver</h2>
+        <p>The failure of the Company to enforce any right or provision of these Terms shall not constitute a waiver of such right or provision. Any waiver of any provision of these Terms will be effective only if in writing and signed by the Company.</p>
+      </section>
+
+      <!-- 25. Entire Agreement -->
+      <section>
+        <h2>24. Entire Agreement</h2>
+        <p>These Terms, together with the <a href="index.html">Privacy Policy</a>, constitute the entire agreement between you and the Company regarding your use of the App and supersede all prior and contemporaneous agreements, proposals, and communications, whether written or oral, between you and the Company relating to the App.</p>
+      </section>
+
+      <!-- 26. Contact -->
+      <section>
+        <h2>25. Contact Us</h2>
+        <p>If you have any questions about these Terms and Conditions, you can contact us:</p>
+        <ul class="contact-list">
+          <li>By email: <a href="mailto:skeletonxtrme@gmail.com">skeletonxtrme@gmail.com</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
